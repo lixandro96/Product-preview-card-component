@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+body{
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+}
+main{
+    background-color: #fff;
+    /* display: flex;
+    flex-direction: column; */
+    padding: 30px 15px;
+}
+
+.cover{
+    width: 100%;
+}
+.cover .desktop{
+    display: none;
+}
+.cover img{
+    width: 100%;
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.info{
+    padding: 25px;
+}
+.product_name{
+    font-size: 0.8rem;
+    margin: 0;
+    letter-spacing: 1px;
+    color: hsl(228, 12%, 48%);
+}
+.product_creator{
+    margin: 0.5rem 0;
+    opacity: 0.88;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+.product_info{
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    font-weight: 500;
+}
+.product_price{
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    color: hsl(158, 36%, 37%);
+}
+.product_price span{
+    margin-left: 20px;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.purchase{
+    margin-top: 0.8rem;
+    padding: 15px 10px;
+    width: 100%;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.attribution{
+    margin: 0;
+}
+@media (min-width: 600px) {
+    body{
+        height: 100vh;
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main{
+        padding: 0;
+        display: flex;
+        width: 600px;
+        height: 450px;
+        border-radius:10px ;
+     
+    }
+    .cover{
+        width: 50%;
+    }
+    .cover .mobile{
+        display: none;
+        
+    }
+    .cover .desktop{
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+    .product_creator{
+        line-height: 0.9;
+        font-weight: 500;
+        font-size: 2.5rem;
+    }
+    .info{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .product_info{
+        font-size: 1rem;
+    }
+    .product_name{
+        margin: 1rem;
+    }
+    .purchase{
+        margin: 1rem 0;
+    }
+    .product_price{
+        margin: 0.9rem 0;
+    }
+    .attribution{
+        position: relative;
+        bottom: 0 ;
+    }
+}
